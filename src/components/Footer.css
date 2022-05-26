@@ -1,0 +1,10 @@
+.icone {
+  display: flex;
+  bottom: 0;
+  font-size: 15px;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  color: white
+}
+

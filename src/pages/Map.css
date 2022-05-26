@@ -1,0 +1,133 @@
+.map-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border: solid 0.5px white;
+}
+.search-container {
+  z-index: 1;
+  color: white;
+  background-color: rgb(25, 30, 43);
+  display: flex;
+  flex-direction: column;
+}
+.stat-api-desktop {
+  display: none;
+}
+
+.btn-calcul {
+  width: 25vw;
+  height: 40px;
+  background-color: midnightblue;
+  color: white;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+
+  margin: 0 10px;
+  border: solid 0.5px white;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  /* flex-direction: c; */
+  width: 100%;
+}
+.itineraire {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.distance p {
+  display: flex;
+  flex-direction: row;
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 10px;
+}
+.calcule {
+  display: flex;
+  margin: 20px;
+}
+.depart-destination {
+  background-color: aliceblue;
+  height: 30px;
+  width: 40vw;
+  border-radius: 12px;
+  margin: 10px 10px;
+  text-align: center;
+}
+.stat-alert {
+  text-align: center;
+  margin: 1em;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .search-container {
+    z-index: 1;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+  }
+  .map-container {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    right: 0;
+    border-left: solid 0.8px white;
+  }
+  .map-page {
+    display: flex;
+  }
+  .calcule {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .depart-destination {
+    background-color: aliceblue;
+    height: 30px;
+    width: 20vw;
+    border-radius: 6px;
+    margin: 10px 10px;
+    text-align: center;
+  }
+  .btn-calcul {
+    cursor: pointer;
+    width: 10vw;
+    height: 30px;
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+    color: white;
+    border-radius: 16px;
+    margin: 10px 10px;
+    border: solid 0.5px white;
+  }
+  .btn-calcul:hover {
+    transform: scale(1, 1.2);
+  }
+  .stat-api-desktop {
+    display: block;
+  }
+  .stat-api-mobil {
+    display: none;
+  }
+}
